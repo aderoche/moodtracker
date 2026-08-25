@@ -337,7 +337,7 @@ button:hover {
 
     .chart-card canvas {
         width: 100% !important;
-        height: 275px !important;
+        height: 200px !important;
         max-width: 100%;
     }
 
