@@ -288,18 +288,20 @@ button:hover {
 
 @media (max-width: 600px) {
 
-        .top-section {
+    
+    .top-section {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch;
         width: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
         gap: 15px;
-        box-sizing: border-box;
     }
 
-    .entry-card,
-    .chart-card {
+    .top-section .entry-card,
+    .top-section .chart-card {
+        flex: none !important;
         width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
     }
     
