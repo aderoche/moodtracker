@@ -288,7 +288,21 @@ button:hover {
 
 @media (max-width: 600px) {
 
-    .top-section,
+        .top-section {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        box-sizing: border-box;
+    }
+
+    .entry-card,
+    .chart-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
     .history-card,
     .summary-card {
         width: 100%;
@@ -296,15 +310,6 @@ button:hover {
         box-sizing: border-box;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .entry-card,
-    .chart-card,
-    .history-card,
-    .summary-card {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
     }
 
     .summary-card {
