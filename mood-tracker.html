@@ -1,0 +1,115 @@
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+
+    <link rel="manifest" href="manifest.json">
+
+    <title>Mood Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel=""icon" href="icon.png">
+
+</head>
+
+<body>
+
+    <h1>Mood Tracker</h1>
+
+<div class="top-section">
+
+    <div class="entry-card">
+
+        <h2>Today's Entry</h2>
+
+        <label for="mood">Mood</label>
+        <input id="mood" type="number" step="0.5" min="1" max="10">
+
+        <label for="sleep">Sleep</label>
+        <input id="sleep" type="number" step="0.5" min="1" max="10">
+
+        <label for="anxiety">Anxiety</label>
+        <input id="anxiety" type="number" step="0.5" min="1" max="10">
+
+        <label for="energy">Energy</label>
+        <input id="energy" type="number" step="0.5" min="1" max="10">
+
+        <label class="other-day">
+            Entering for another day?
+            <input type="checkbox" id="other-day">
+        </label>
+
+        <div id="date-container" style="display: none;">
+        <label for="entry-date">What day are you entering for?</label>
+        <input id="entry-date" type="date">
+        </div>
+
+        <p id="save-message"></p>
+        <button id="save-button">Save Entry</button>
+
+    </div>
+
+    <div class="chart-card">
+
+        <h2 id="chart-title">Mood Over Time</h2>
+
+        <canvas id="moodChart"></canvas>
+
+        <button id="next-chart">Next Chart →</button>
+
+    </div>
+
+</div>
+<div class="summary-card">
+
+    <h2>Overview</h2>
+
+    <div class="summary-stats">
+
+        <div>
+            <p>Average Mood</p>
+            <span id="average-mood">-</span>
+        </div>
+
+        <div>
+            <p>Average Sleep</p>
+            <span id="average-sleep">-</span>
+        </div>
+
+        <div>
+            <p>Average Anxiety</p>
+            <span id="average-anxiety">-</span>
+        </div>
+
+        <div>
+            <p>Average Energy</p>
+            <span id="average-energy">-</span>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="history-card">
+
+    <h2>Recent Entries</h2>
+
+    <div id="entries"></div>
+
+</div>
+
+<div class="data-card">
+    <button id="export-button">Export Data</button>
+
+    <input type="file" id="import-file" accept=".json">
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+

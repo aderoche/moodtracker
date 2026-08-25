@@ -1,0 +1,230 @@
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    background-image: url("css-pattern-by-magicpattern (1).png");
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1,
+.top-section,
+.history-card {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    color: #6b003b;
+    font-weight: bold;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.entry-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    color: #6b003b;
+}
+
+.entry-actions {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    gap: 8px;
+}
+.save-edit-button,
+.cancel-edit-button {
+    transform: translateX(10px);
+}
+.entry-actions button {
+    display: inline-block;
+    margin-top: 0;
+    padding: 5px 8px;
+}
+
+#other-day {
+    width: auto;
+    margin: 0;
+}
+
+.other-day {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #6b003b;
+}
+
+input:focus {
+    outline: none;
+    border-color: #644556;
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #644556;
+    color: white;
+}
+
+button:hover {
+    background-color: #5c354a;
+}
+
+.history-card {
+    background-color: white;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    color: #6b003b;
+}
+
+.entry {
+    width: 300px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+.entry-header {
+    position: relative;
+    align-items: center;
+}
+
+#entries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entry-date{
+    font-weight: bold;
+    margin: 0;
+}
+.entry-time {
+    font-size: 0.8em;
+    color: #743557;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.top-section {
+    display: flex;
+    gap: 20px;
+}
+
+.chart-card {
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+    height: 350px;
+    color: #6b003b;
+}
+
+.chart-card canvas {
+max-width: 100%;
+max-height: 300px;
+}
+
+.history-card {
+    margin-top: 30px;
+}
+
+#moodChart {
+    max-width: 100%;
+}
+
+@media (max-width: 900px) {
+
+    .top-section {
+        flex-direction: column;
+    }
+
+    input {
+        box-sizing: border-box;
+        width: 100%;
+    }
+.chart-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+button {
+    min-height: 44px;
+    padding: 10px 16px;
+}
+}
+.summary-card {
+    border-radius: 15px;
+    color: #6b003b;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 900px;
+}
+
+.summary-card h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.summary-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.summary-stats div {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f7f7f7;
+}
+
+.summary-stats p {
+    margin: 0 0 8px;
+    font-size: 0.9rem;
+}
+
+.summary-stats span {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.entry-card,
+.chart-card,
+.history-card,
+.summary-card {
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
