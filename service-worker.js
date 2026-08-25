@@ -1,4 +1,4 @@
-const CACHE_NAME = "mood-tracker-v2";
+const CACHE_NAME = "mood-tracker-v3";
 
 const FILES_TO_CACHE = [
     "./",
@@ -29,4 +29,13 @@ self.addEventListener("install", event => {
     );
 
     self.skipWaiting();
+});
+
+self.addEventListener("fetch", event => {
+    event.respondWith(
+        caches.match(event.request)
+            .then(response => {
+                return response || fetch(event.request);
+            })
+    );
 });
