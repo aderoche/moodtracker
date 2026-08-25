@@ -328,16 +328,16 @@ button:hover {
         margin-left: auto;
         margin-right: auto;
     }
-
+    
     .chart-card {
-        height: 375px;
+        height: 430px;
         padding: 20px 12px;
         box-sizing: border-box;
     }
 
     .chart-card canvas {
         width: 100% !important;
-        height: 350px !important;
+        height: 275px !important;
         max-width: 100%;
     }
 
