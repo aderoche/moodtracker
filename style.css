@@ -1,9 +1,19 @@
+/* =========================
+   BASE
+========================= */
+
 body {
     font-family: "Trebuchet MS", sans-serif;
     background-image: url("css-pattern-by-magicpattern (1).png");
     margin: 0;
     min-height: 100vh;
+    color: #6b003b;
 }
+
+
+/* =========================
+   SHARED WIDTH
+========================= */
 
 h1,
 .top-section,
@@ -13,27 +23,140 @@ h1,
     margin-left: auto;
     margin-right: auto;
 }
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    color: #6b003b;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid #fdfcfc;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   SHARED CARD STYLING
+========================= */
+
+.entry-card,
+.chart-card,
+.history-card,
+.summary-card,
+.entry {
+    background-color: white !important;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   HEADER
+========================= */
 
 h1 {
     text-align: center;
     margin-top: 0;
-    padding-top: 40px;
     margin-bottom: 30px;
-    color: #6b003b;
-    font-weight: bold;
-    background-color: white;
     padding: 25px;
     border-radius: 12px;
+    color: #6b003b;
+    font-weight: bold;
 }
 
+
+/* =========================
+   TOP SECTION
+========================= */
+
+.top-section {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* =========================
+   ENTRY FORM CARD
+========================= */
+
 .entry-card {
-    background-color: white;
     padding: 25px;
     border-radius: 12px;
     flex: 1;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    color: #6b003b;
 }
+
+
+/* =========================
+   CHART CARD
+========================= */
+
+.chart-card {
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+    height: 350px;
+}
+
+.chart-card canvas {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+#moodChart {
+    max-width: 100%;
+}
+
+
+/* =========================
+   HISTORY
+========================= */
+
+.history-card {
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+#entries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entry {
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+.entry-header {
+    position: relative;
+    align-items: center;
+}
+
+.entry-date {
+    font-weight: bold;
+    margin: 0;
+}
+
+.entry-time {
+    font-size: 0.8em;
+    color: #743557;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   ENTRY ACTIONS
+========================= */
 
 .entry-actions {
     position: absolute;
@@ -42,26 +165,22 @@ h1 {
     display: flex;
     gap: 8px;
 }
-.save-edit-button,
-.cancel-edit-button {
-    transform: translateX(10px);
-}
+
 .entry-actions button {
     display: inline-block;
     margin-top: 0;
     padding: 5px 8px;
 }
 
-#other-day {
-    width: auto;
-    margin: 0;
+.save-edit-button,
+.cancel-edit-button {
+    transform: none;
 }
 
-.other-day {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+
+/* =========================
+   FORMS
+========================= */
 
 label {
     display: block;
@@ -83,6 +202,22 @@ input:focus {
     border-color: #644556;
 }
 
+#other-day {
+    width: auto;
+    margin: 0;
+}
+
+.other-day {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
 button {
     display: block;
     margin-top: 10px;
@@ -98,95 +233,13 @@ button:hover {
     background-color: #5c354a;
 }
 
-.history-card {
-    background-color: white;
-    padding: 25px;
-    margin-top: 30px;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    color: #6b003b;
-}
 
-.entry {
-    width: 300px;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    display: block;
-    text-align: center;
-}
+/* =========================
+   SUMMARY
+========================= */
 
-.entry-header {
-    position: relative;
-    align-items: center;
-}
-
-#entries {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.entry-date{
-    font-weight: bold;
-    margin: 0;
-}
-.entry-time {
-    font-size: 0.8em;
-    color: #743557;
-    margin-top: 5px;
-    font-weight: bold;
-}
-
-.top-section {
-    display: flex;
-    gap: 20px;
-}
-
-.chart-card {
-    padding: 25px;
-    border-radius: 12px;
-    flex: 1;
-    text-align: center;
-    height: 350px;
-    color: #6b003b;
-}
-
-.chart-card canvas {
-max-width: 100%;
-max-height: 300px;
-}
-
-.history-card {
-    margin-top: 30px;
-}
-
-#moodChart {
-    max-width: 100%;
-}
-
-@media (max-width: 900px) {
-
-    .top-section {
-        flex-direction: column;
-    }
-
-    input {
-        box-sizing: border-box;
-        width: 100%;
-    }
-.chart-card {
-    width: 100%;
-    box-sizing: border-box;
-}
-button {
-    min-height: 44px;
-    padding: 10px 16px;
-}
-}
 .summary-card {
     border-radius: 15px;
-    color: #6b003b;
     padding: 25px;
     margin: 25px auto;
     max-width: 900px;
@@ -220,11 +273,82 @@ button {
     font-size: 1.8rem;
     font-weight: bold;
 }
-.entry-card,
-.chart-card,
-.history-card,
-.summary-card {
-    background-color: #ffffff;
-    border: 1px solid #f0f0f0;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 0 10px;
+    }
+
+    h1 {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 15px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+    }
+
+    .top-section {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .entry-card,
+    .chart-card,
+    .history-card,
+    .summary-card {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px;
+    }
+
+    .chart-card {
+        height: auto;
+        min-height: 350px;
+    }
+
+    .chart-card canvas {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button {
+        min-height: 44px;
+        padding: 10px 16px;
+    }
+
+    .entry {
+        width: 100%;
+        max-width: 340px;
+        box-sizing: border-box;
+    }
+
+    .entry-actions {
+        right: 0;
+    }
+
+    .summary-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .summary-stats div {
+        padding: 12px 8px;
+    }
+
+    .summary-stats span {
+        font-size: 1.5rem;
+    }
 }
