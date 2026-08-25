@@ -300,7 +300,7 @@ button:hover {
 
     .entry-card,
     .chart-card {
-        width: calc(100% - 32px);
+        width: 100%;
         box-sizing: border-box;
     }
 
