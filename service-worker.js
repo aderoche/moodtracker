@@ -2,7 +2,7 @@ const CACHE_NAME = "mood-tracker-v2";
 
 const FILES_TO_CACHE = [
     "./",
-    "./mood-tracker.html",
+    "./index.html",
     "./style.css",
     "./script.js",
     "./manifest.json",
