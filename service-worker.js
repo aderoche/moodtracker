@@ -1,3 +1,18 @@
+const CACHE_NAME = "mood-tracker-v2";
+
+const FILES_TO_CACHE = [
+    "./",
+    "./mood-tracker.html",
+    "./style.css",
+    "./script.js",
+    "./manifest.json",
+    "./icon.png",
+    "./js/storage.js",
+    "./js/entries.js",
+    "./js/analytics.js",
+    "./js/charts.js"
+];
+
 self.addEventListener("install", event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
