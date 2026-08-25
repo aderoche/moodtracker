@@ -114,6 +114,7 @@ h1 {
 ========================= */
 
 .history-card {
+    text-align: center;
     padding: 25px;
     margin-top: 30px;
     border-radius: 12px;
