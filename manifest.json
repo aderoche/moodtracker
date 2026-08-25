@@ -2,10 +2,11 @@
     "name": "Mood Tracker",
     "short_name": "Mood Tracker",
     "start_url": "./",
+    "scope": "./",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#644556",
-     "icons": [
+    "icons": [
         {
             "src": "icon.png",
             "sizes": "512x512",
