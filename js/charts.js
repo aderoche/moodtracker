@@ -68,6 +68,10 @@ export function createMoodOverTimeChart(
         },
 
         options: {
+
+            responsive: true,
+            maintainAspectRatio: false,
+
             plugins: {
                 legend: {
                     display: false
@@ -115,6 +119,9 @@ export function createScatterChart(
         },
 
         options: {
+            responsive: true,
+            maintainAspectRatio: false,
+        
             plugins: {
                 legend: {
                     display: false
