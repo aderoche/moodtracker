@@ -281,23 +281,14 @@ button:hover {
 
 @media (max-width: 600px) {
 
-    body {
-        padding: 0 10px;
-    }
-
-    h1 {
+    .top-section,
+    .history-card,
+    .summary-card {
         width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
-        padding: 20px 15px;
-        margin-top: 15px;
-        margin-bottom: 20px;
-        font-size: 1.8rem;
-    }
-
-    .top-section {
-        width: 100%;
-        flex-direction: column;
-        gap: 15px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .entry-card,
@@ -305,38 +296,12 @@ button:hover {
     .history-card,
     .summary-card {
         width: 100%;
-        box-sizing: border-box;
-        padding: 18px;
-    }
-
-    .chart-card {
-        height: auto;
-        min-height: 350px;
-    }
-
-    .chart-card canvas {
-        width: 100% !important;
         max-width: 100%;
-    }
-
-    input {
-        width: 100%;
         box-sizing: border-box;
     }
 
-    button {
-        min-height: 44px;
-        padding: 10px 16px;
-    }
-
-    .entry {
-        width: 100%;
-        max-width: 340px;
-        box-sizing: border-box;
-    }
-
-    .entry-actions {
-        right: 0;
+    .summary-card {
+        padding: 18px;
     }
 
     .summary-stats {
@@ -345,10 +310,15 @@ button:hover {
     }
 
     .summary-stats div {
-        padding: 12px 8px;
+        min-width: 0;
+        box-sizing: border-box;
     }
 
-    .summary-stats span {
-        font-size: 1.5rem;
+    .entry {
+        width: 100%;
+        max-width: 340px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
