@@ -226,14 +226,16 @@ input:focus {
 ========================= */
 
 button {
-    display: block;
-    margin-top: 10px;
+    display: inline-block;
+    width: auto;
+    margin: 10px 0 0;
     padding: 10px 20px;
-    border: none;
     border-radius: 6px;
-    cursor: pointer;
     background-color: #644556;
     color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 button:hover {
