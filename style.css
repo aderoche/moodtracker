@@ -246,7 +246,9 @@ button:hover,
 .file-button:hover {
     background-color: #5c354a;
 }
-
+#import-file {
+    display: none;
+}
 /* =========================
    SUMMARY
 ========================= */
