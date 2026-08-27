@@ -225,7 +225,7 @@ input:focus {
    BUTTONS
 ========================= */
 
-button {
+button, .file-button {
     display: block;
     margin-top: 10px;
     padding: 10px 20px;
@@ -236,27 +236,9 @@ button {
     color: white;
 }
 
-button:hover {
+button:hover, .file-button:hover {
     background-color: #5c354a;
 }
- .file-button {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        background-color: #644556;
-        color: white;
-        font-family: inherit;
-        font-size: 13.3333px;
-        text-align: center;
-        box-sizing: border-box;
-    }
-
-    .file-button:hover {
-        background-color: #5c354a;
-    }
 
 /* =========================
    SUMMARY
