@@ -19,9 +19,8 @@ export function displayAverages(
     averageAnxiety,
     averageEnergy
 ) {
-
-    averageMood.textContent = calculateAverage(entries, "mood");
-    averageSleep.textContent = calculateAverage(entries, "sleep");
-    averageAnxiety.textContent = calculateAverage(entries, "anxiety");
-    averageEnergy.textContent = calculateAverage(entries, "energy");
+    averageMood.textContent = calculateAverage("mood").toFixed(1);
+    averageSleep.textContent = calculateAverage("sleep").toFixed(1);
+    averageAnxiety.textContent = calculateAverage("anxiety").toFixed(1);
+    averageEnergy.textContent = calculateAverage("energy").toFixed(1);
 }
