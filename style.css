@@ -239,7 +239,24 @@ button {
 button:hover {
     background-color: #5c354a;
 }
+ .file-button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: #644556;
+        color: white;
+        font-family: inherit;
+        font-size: 13.3333px;
+        text-align: center;
+        box-sizing: border-box;
+    }
 
+    .file-button:hover {
+        background-color: #5c354a;
+    }
 
 /* =========================
    SUMMARY
@@ -346,23 +363,5 @@ button:hover {
         height: 200px !important;
         max-width: 100%;
         max-height: 200px;
-    }
-    .file-button {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        background-color: #644556;
-        color: white;
-        font-family: inherit;
-        font-size: 13.3333px;
-        text-align: center;
-        box-sizing: border-box;
-    }
-
-    .file-button:hover {
-        background-color: #5c354a;
     }
 }
