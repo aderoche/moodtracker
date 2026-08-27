@@ -239,6 +239,10 @@ button, .file-button {
 button:hover, .file-button:hover {
     background-color: #5c354a;
 }
+.file-button {
+    display: inline-block;
+    width: fit-content;
+}
 
 /* =========================
    SUMMARY
