@@ -11,7 +11,6 @@ export function calculateAverage(entries, property) {
     return total / entries.length;
 }
 
-
 export function displayAverages(
     entries,
     averageMood,
@@ -19,8 +18,8 @@ export function displayAverages(
     averageAnxiety,
     averageEnergy
 ) {
-    averageMood.textContent = calculateAverage("mood").toFixed(1);
-    averageSleep.textContent = calculateAverage("sleep").toFixed(1);
-    averageAnxiety.textContent = calculateAverage("anxiety").toFixed(1);
-    averageEnergy.textContent = calculateAverage("energy").toFixed(1);
+    averageMood.textContent = calculateAverage(entries, "mood").toFixed(1);
+    averageSleep.textContent = calculateAverage(entries, "sleep").toFixed(1);
+    averageAnxiety.textContent = calculateAverage(entries, "anxiety").toFixed(1);
+    averageEnergy.textContent = calculateAverage(entries, "energy").toFixed(1);
 }
