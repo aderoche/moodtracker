@@ -226,7 +226,7 @@ input:focus {
 ========================= */
 
 button {
-    display: inline-block;
+    display: block;
     width: auto;
     margin: 10px 0 0;
     padding: 10px 20px;
